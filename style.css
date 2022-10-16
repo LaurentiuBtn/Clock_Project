@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./Images/galaxy2.jpg");
+    opacity: 0.5;
+    z-index: -1;
+
+}
+#clock {
+    margin: 0 auto;
+    position: sticky;
+    height: 300px;
+    width: 300px;
+    background-image: url("./Images/earth.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 15px;
+    border-radius: 50%; 
+    box-shadow: 0.5rem 0.5rem 1rem #555, -0.5rem -0.5rem 1rem #555;
+    opacity: 0.95;
+    z-index: 1000;
+} 
+.twelve,
+.three,
+.six,
+.nine
+{
+    background: rgb(188, 114, 39);
+    position: absolute;
+    border-radius: 50%;
+}
+
+.twelve,
+.six
+{
+    height: 15px;
+    width: 6px;
+}
+
+.three,
+.nine
+{
+    height: 6px;
+    width: 15px;
+}
+
+.twelve
+{
+    left: 50%;
+    top: -1px;
+}
+
+.three
+{
+    right: -1px;
+    top: 50%;
+}
+
+.six
+{
+    left: 50%;
+    bottom: -1px;
+}
+
+.nine
+{
+    left: -1px;
+    top: 50%;
+}
+.hour {
+    height: 120px;
+    width: 4px;
+    background: rgb(172,168,241);
+    background: linear-gradient(90deg, rgba(172,168,241,1) 28%, rgba(232,8,61,1) 59%, rgba(0,212,255,1) 100%);
+    position: absolute;
+    left: 50%;
+    top: 20px;
+}
+.minutes
+{
+    height: 100px;
+    width: 4px;
+    background: rgb(38,28,217);
+    background: linear-gradient(90deg, rgba(38,28,217,1) 16%, rgba(9,232,8,1) 59%, rgba(0,212,255,1) 100%);
+    position: absolute;
+    left: 50%;
+    top: 40px;
+}
+.seconds
+{
+    height: 60px;
+    width: 4px;
+    background: rgb(239,200,4);
+    background: linear-gradient(90deg, rgba(239,200,4,1) 12%, rgba(1,250,0,1) 45%, rgba(58,148,166,1) 80%);
+    position: absolute;
+    left: 50%;
+    top: 80px;
+}
+.hour, .minutes, .seconds
+{
+    transform-origin: 2px 100%;
+    -webkit-transform-origin: 2px 100%;
+}
